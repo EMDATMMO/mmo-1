@@ -3,91 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hỗ Trợ Đăng Ký Thông Tin MyViettel - MyVina</title>
+    <title>Hỗ Trợ Đăng Ký Thông Tin - MyViettel & MyVNPT</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #ef4444, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        .btn-hover:hover { transform: translateY(-5px); transition: all 0.3s; }
+        @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); } 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); } }
+        .pulse-red { animation: pulse-red 2s infinite; }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-red-600">My</span><span class="text-2xl font-bold text-blue-600">Support</span>
-            </div>
-            <a href="tel:0123456789" class="bg-red-600 text-white px-4 py-2 rounded-full font-bold hover:bg-red-700 transition">
-                <i class="fa-solid fa-phone"></i> Hotline: 0xxx.xxx.xxx
-            </a>
-        </div>
-    </header>
+    <section class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 animate__animated animate__fadeInDown">
+                CHUYÊN VIÊN <span class="gradient-text">HỖ TRỢ VIỄN THÔNG</span>
+            </h1>
+            <p class="text-gray-600 text-lg mb-10 animate__animated animate__fadeInUp">An toàn - Bảo mật - Hỗ trợ đăng ký thông tin chính chủ từ xa</p>
+            
+            <div class="max-w-md mx-auto space-y-4 px-4">
+                
+                <a href="https://zalo.me/0xxxxxxxxx" target="_blank" 
+                   class="btn-hover flex items-center justify-between bg-blue-500 text-white p-4 rounded-2xl shadow-lg font-bold text-lg animate__animated animate__zoomIn">
+                    <span class="flex items-center"><i class="mr-3">💬</i> NHẮN TIN ZALO RIÊNG</span>
+                    <span>➜</span>
+                </a>
 
-    <section class="bg-gradient-to-r from-red-500 to-blue-600 text-white py-16 px-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Chuẩn Hóa Thông Tin Thuê Bao</h1>
-            <p class="text-lg mb-8">Hỗ trợ cập nhật chính chủ Viettel & Vinaphone nhanh chóng - Không cần ra quầy.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#register" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-bold text-xl hover:bg-gray-100">Đăng Ký Ngay</a>
-                <a href="https://zalo.me/yourid" class="bg-blue-400 text-white px-8 py-3 rounded-lg font-bold text-xl hover:bg-blue-500">Nhắn Tin Zalo</a>
-            </div>
-        </div>
-    </section>
+                <a href="https://zalo.me/g/your_group_id" target="_blank" 
+                   class="btn-hover flex items-center justify-between bg-green-500 text-white p-4 rounded-2xl shadow-lg font-bold text-lg animate__animated animate__zoomIn animate__delay-1s">
+                    <span class="flex items-center"><i class="mr-3">👥</i> THAM GIA NHÓM HỖ TRỢ</span>
+                    <span>➜</span>
+                </a>
 
-    <section class="py-16 container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Dịch Vụ Hỗ Trợ</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-red-500">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Viettel_logo_2021.svg" alt="Viettel" class="h-12 mb-4">
-                <ul class="space-y-3">
-                    <li><i class="fa-solid fa-check text-green-500"></i> Đăng ký chính chủ mới</li>
-                    <li><i class="fa-solid fa-check text-green-500"></i> Cập nhật CCCD hết hạn</li>
-                    <li><i class="fa-solid fa-check text-green-500"></i> Mở khóa SIM bị chặn 1-2 chiều</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-blue-500">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_Vinaphone.svg" alt="Vinaphone" class="h-12 mb-4">
-                <ul class="space-y-3">
-                    <li><i class="fa-solid fa-check text-green-500"></i> Thay đổi thông tin chủ thuê bao</li>
-                    <li><i class="fa-solid fa-check text-green-500"></i> Kiểm tra gói cước ưu đãi</li>
-                    <li><i class="fa-solid fa-check text-green-500"></i> Chuẩn hóa dữ liệu theo Nghị định</li>
-                </ul>
+                <a href="https://facebook.com/your_profile" target="_blank" 
+                   class="btn-hover flex items-center justify-between bg-blue-800 text-white p-4 rounded-2xl shadow-lg font-bold text-lg animate__animated animate__zoomIn animate__delay-2s">
+                    <span class="flex items-center"><i class="mr-3">📘</i> GHÉ THĂM FACEBOOK</span>
+                    <span>➜</span>
+                </a>
+
+                <a href="tel:0xxxxxxxxx" 
+                   class="pulse-red flex items-center justify-center bg-red-600 text-white p-4 rounded-full font-black text-xl shadow-xl mt-8">
+                    📞 GỌI HỖ TRỢ NGAY
+                </a>
+
             </div>
         </div>
     </section>
 
-    <section id="register" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4 max-w-xl">
-            <div class="bg-white p-8 rounded-2xl shadow-xl">
-                <h3 class="text-2xl font-bold text-center mb-6">Gửi Yêu Cầu Hỗ Trợ</h3>
-                <form action="#" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block font-semibold">Số điện thoại cần hỗ trợ</label>
-                        <input type="text" class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-red-500 outline-none" placeholder="Nhập số điện thoại...">
-                    </div>
-                    <div>
-                        <label class="block font-semibold">Nhà mạng</label>
-                        <select class="w-full border p-3 rounded-lg outline-none">
-                            <option>Viettel</option>
-                            <option>Vinaphone</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block font-semibold">Yêu cầu cụ thể</label>
-                        <textarea class="w-full border p-3 rounded-lg outline-none" rows="3" placeholder="Ví dụ: Đăng ký chính chủ..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700">GỬI THÔNG TIN</button>
-                    <p class="text-xs text-gray-500 text-center mt-4 italic underline text-blue-800">Cam kết bảo mật 100% dữ liệu khách hàng theo quy định.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 text-white py-8 text-center">
-        <p class="mb-2">© 2026 Chuyên Viên Hỗ Trợ Đăng Ký Thông Tin Thuê Bao</p>
-        <p class="text-gray-400 text-sm">Hỗ trợ nhanh toàn quốc - Uy tín - Tận tâm</p>
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>© 2026 Chuyên viên hỗ trợ đăng ký thông tin</p>
+        <p>Uy tín tạo nên thương hiệu</p>
     </footer>
-
-    <a href="https://zalo.me/yourid" class="fixed bottom-6 right-6 bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50">
-        <span class="font-bold">Zalo</span>
-    </a>
 
 </body>
 </html>
