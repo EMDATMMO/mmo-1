@@ -3,131 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hỗ Trợ Đăng Ký Thuê Bao - Viettel & VinaPhone</title>
+    <title>EM ĐẠT MMO - HỖ TRỢ MYVIETTEL & MYVINA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        .gradient-text {
-            background: linear-gradient(90deg, #ef4444, #3b82f6, #06b6d4);
+        .gradient-brand {
+            background: linear-gradient(90deg, #ed1c24, #005baa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .nhap-nhay-lien-tuc {
+            animation: blinker 1.5s linear infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
         }
         .floating { animation: float 3s ease-in-out infinite; }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-15px); }
         }
-        .card-hover:hover { transform: scale(1.03); transition: all 0.3s ease; }
+        .bg-vien-thong {
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-color: #f8fafc;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-vien-thong text-gray-800">
 
-    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black text-red-600">MY<span class="text-blue-600">SUPPORT</span></div>
-            <div class="hidden md:flex space-x-8 font-bold">
-                <a href="#home" class="hover:text-red-600 transition">Trang Chủ</a>
-                <a href="#services" class="hover:text-red-600 transition">Dịch Vụ</a>
-                <a href="#contact" class="hover:text-red-600 transition">Liên Hệ</a>
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Viettel_logo_2021.svg" alt="Viettel" class="h-8">
+                <div class="h-6 w-px bg-gray-300"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_Vinaphone.svg" alt="Vina" class="h-8">
             </div>
-            <a href="tel:09xxxxxxx" class="bg-red-600 text-white px-5 py-2 rounded-full font-bold shadow-lg hover:bg-red-700">GỌI NGAY</a>
-        </div>
-    </nav>
-
-    <section id="home" class="min-h-screen flex items-center bg-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 animate__animated animate__fadeInLeft">
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-                    Chuẩn Hóa <br> <span class="gradient-text text-nhap-nhay">Thông Tin Sim</span>
-                </h1>
-                <p class="text-xl text-gray-600 mb-8 italic">"Hỗ trợ cập nhật chính chủ cho MyViettel & MyVina nhanh chóng, an toàn, bảo mật tuyệt đối."</p>
-                <div class="flex space-x-4">
-                    <a href="#services" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-blue-700">Xem Dịch Vụ</a>
-                    <a href="https://zalo.me/your_zalo_link" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-50">Tư Vấn Zalo</a>
-                </div>
-            </div>
-            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-                <img src="https://img.freepik.com/free-vector/customer-support-flat-design-concept_23-2148293340.jpg" alt="Support" class="w-full max-w-lg floating rounded-3xl">
+            <div class="text-right">
+                <p class="text-xs font-bold text-gray-500 uppercase">Hotline Hỗ Trợ</p>
+                <a href="tel:0394782861" class="text-lg font-black text-red-600">0394.782.861</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="services" class="py-24 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Dịch Vụ Của Chúng Tôi</h2>
-                <div class="h-1 w-24 bg-red-600 mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover border-t-8 border-red-500 animate__animated animate__fadeInUp">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Viettel_logo_2021.svg" class="h-12 mb-6" alt="Viettel">
-                    <h3 class="text-2xl font-bold mb-4">Hỗ Trợ MyViettel</h3>
-                    <ul class="space-y-3 text-gray-600 font-medium">
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Đăng ký chính chủ từ xa</li>
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Thay đổi ảnh CCCD/CMND</li>
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Mở khóa Sim chặn 1-2 chiều</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover border-t-8 border-blue-500 animate__animated animate__fadeInUp animate__delay-1s">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_Vinaphone.svg" class="h-12 mb-6" alt="Vina">
-                    <h3 class="text-2xl font-bold mb-4">Hỗ Trợ MyVina</h3>
-                    <ul class="space-y-3 text-gray-600 font-medium">
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Cập nhật thông tin MyVNPT</li>
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Kiểm tra gói cước ưu đãi</li>
-                        <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Chuyển đổi Sim 4G/5G</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 bg-white text-center">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12">Kết Nối Với Chuyên Viên</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-                
-                <a href="https://zalo.me/g/nhom_cua_ban" class="w-full md:w-80 bg-green-500 text-white p-6 rounded-2xl shadow-2xl hover:bg-green-600 transition transform hover:-translate-y-2">
-                    <i class="fa-solid fa-users text-4xl mb-4"></i>
-                    <h4 class="text-xl font-bold">NHÓM ZALO HỖ TRỢ</h4>
-                    <p class="text-sm opacity-90 mt-2">Tham gia cộng đồng giải đáp 24/7</p>
-                </a>
-
-                <a href="https://facebook.com/profile_cua_ban" class="w-full md:w-80 bg-blue-800 text-white p-6 rounded-2xl shadow-2xl hover:bg-blue-900 transition transform hover:-translate-y-2">
-                    <i class="fa-brands fa-facebook text-4xl mb-4"></i>
-                    <h4 class="text-xl font-bold">FACEBOOK CÁ NHÂN</h4>
-                    <p class="text-sm opacity-90 mt-2">Theo dõi các tin tức mới nhất</p>
-                </a>
-
-                <a href="https://zalo.me/so_dien_thoai" class="w-full md:w-80 bg-blue-500 text-white p-6 rounded-2xl shadow-2xl hover:bg-blue-600 transition transform hover:-translate-y-2">
-                    <i class="fa-solid fa-comment-dots text-4xl mb-4"></i>
-                    <h4 class="text-xl font-bold">ZALO CHUYÊN VIÊN</h4>
-                    <p class="text-sm opacity-90 mt-2">Hỗ trợ riêng tư 1-1 nhanh nhất</p>
-                </a>
-            </div>
-            
-            <div class="mt-20 p-10 bg-red-50 rounded-3xl border-2 border-dashed border-red-200">
-                <h3 class="text-2xl font-bold text-red-600 mb-4 animate__animated animate__pulse animate__infinite">LƯU Ý QUAN TRỌNG</h3>
-                <p class="text-gray-700 font-medium">Chúng tôi cam kết bảo mật 100% hình ảnh CCCD và dữ liệu cá nhân của khách hàng. Chỉ sử dụng cho mục đích đăng ký thuê bao theo quy định của Bộ Thông tin & Truyền thông.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900 text-white py-12">
+    <section id="home" class="py-12 bg-gradient-to-b from-white to-blue-50">
         <div class="container mx-auto px-6 text-center">
-            <p class="mb-4">© 2026 Hệ Thống Hỗ Trợ Đăng Ký Viễn Thông Toàn Quốc</p>
-            <div class="flex justify-center space-x-6 text-gray-400">
-                <a href="#" class="hover:text-white">Chính sách bảo mật</a>
-                <a href="#" class="hover:text-white">Điều khoản sử dụng</a>
+            <div class="flex justify-center space-x-4 mb-8 animate__animated animate__zoomIn">
+                <img src="https://vietteltelecom.vn/images/logo-viettel-h5.png" class="h-20 floating" alt="MyViettel">
+                <img src="https://vnpt.com.vn/assets/images/logo.png" class="h-20 floating" style="animation-delay: 1s;" alt="MyVina">
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-black mb-4 uppercase">
+                Hệ Thống Hỗ Trợ <span class="gradient-brand">Chuẩn Hóa Thuê Bao</span>
+            </h1>
+            
+            <p class="nhap-nhay-lien-tuc text-xl mb-6">● ĐANG TRỰC TUYẾN - HỖ TRỢ NGAY</p>
+            
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-3xl shadow-2xl border-2 border-blue-100 mb-10">
+                <p class="text-gray-700 font-medium leading-relaxed">
+                    Chào mừng bạn đến với kênh hỗ trợ của chuyên viên <span class="font-bold text-blue-600">EM ĐẠT MMO</span>. 
+                    Chúng tôi giúp bạn cập nhật CCCD, đăng ký chính chủ cho sim Viettel và VinaPhone từ xa, nhanh chóng, không cần ra cửa hàng.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://zalo.me/0394782861" class="bg-[#0068ff] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition">
+                    <i class="fa-solid fa-comment-dots mr-2"></i> CHAT ZALO NGAY
+                </a>
+                <a href="https://www.facebook.com/thanh.at.144670/" class="bg-[#1877f2] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition">
+                    <i class="fa-brands fa-facebook mr-2"></i> XEM FACEBOOK
+                </a>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <a href="tel:09xxxxxxx" class="fixed bottom-10 right-10 bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl animate-bounce z-50 hover:scale-110 transition">
-        <i class="fa-solid fa-phone text-2xl"></i>
-    </a>
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-black text-center mb-12 uppercase italic">Dịch Vụ MyViettel & MyVina</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-l-8 border-red-600 animate__animated animate__fadeInLeft">
+                    <h3 class="text-xl font-black text-red-600 mb-4 uppercase flex items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Viettel_logo_2021.svg" class="h-6 mr-3"> Hỗ Trợ Viettel
+                    </h3>
+                    <ul class="space-y-4 font-bold text-gray-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Cập nhật CCCD gắn chip lên hệ thống</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Đăng ký sim chính chủ chưa có thông tin</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Mở khóa sim chặn 1 chiều, 2 chiều</li>
+                    </ul>
+                </div>
 
-</body>
-</html>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-l-8 border-blue-600 animate__animated animate__fadeInRight">
+                    <h3 class="text-xl font-black text-blue-600 mb-4 uppercase flex items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_Vinaphone.svg" class="h-6 mr-3"> Hỗ Trợ VinaPhone
+                    </h3>
+                    <ul class="space-y-4 font-bold text-gray-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Chuẩn hóa MyVNPT từ xa 100%</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Xử lý sim rác sang tên chính chủ</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Đăng ký gói cước 4G/5G ưu đãi lớn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-blue-900 text-white rounded-t-[3rem]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-10">THÔNG TIN LIÊN HỆ CHÍNH CHỦ</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="p-6 bg-white/10 rounded-2xl">
+                    <i class="fa-solid fa-phone-flip text-3xl mb-4 text-yellow-400"></i>
+                    <p class="font-bold">HOTLINE</p>
+                    <p class="text-xl">0394.782.861</p>
+                </div>
+                <div class="p-6 bg-white/10 rounded-2xl">
+                    <i class="fa-brands fa-facebook-messenger text-3xl mb-4 text-blue-400"></i>
+                    <p class="font-bold">FACEBOOK</p
